@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Evangelize 2025 - Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dark">
+  <!-- Loading overlay: shows a cross/church motif while the page loads -->
+  <div id="pageLoader" class="page-loader" role="status" aria-live="polite" aria-label="Loading">
+    <div class="loader-inner">
+      <svg width="110" height="110" viewBox="0 0 110 110" aria-hidden="true" class="crucifix-svg">
+        <defs>
+          <linearGradient id="g1" x1="0%" x2="100%">
+            <stop offset="0%" stop-color="#8ef2b8"/>
+            <stop offset="50%" stop-color="#6ec8ff"/>
+            <stop offset="100%" stop-color="#ffd36e"/>
+          </linearGradient>
+        </defs>
+        <!-- halo -->
+        <g>
+          <circle class="halo" cx="55" cy="28" r="18" fill="none" stroke="url(#g1)" stroke-width="2" opacity="0.95" />
+        </g>
+        <!-- crucifix -->
+        <g fill="none" stroke="url(#g1)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path class="cross-vert" d="M55 18 L55 76" />
+          <path class="cross-horiz" d="M36 40 L74 40" />
+        </g>
+        <!-- abstract figure on the cross -->
+        <g fill="none" stroke="url(#g1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle class="figure-head" cx="55" cy="30" r="4" fill="url(#g1)" />
+          <path class="figure-body" d="M55 34 L55 50" />
+          <path class="figure-arms" d="M50 42 L60 42" />
+        </g>
+      </svg>
+      <div class="loader-text">Evangelize 2025</div>
+    </div>
+  </div>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="brand">
+        <a href="index.html"><img src="assets/logo.svg" alt="BBC Youth logo" class="logo"></a>
+      </div>
+      <div class="nav-right">
+        <button id="themeToggle" class="theme-toggle" aria-pressed="true" title="Toggle theme">🌙</button>
+      </div>
+      <ul class="nav-list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="evangelize.html">Evangelize</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <!-- Parallax background layers -->
+      <div class="hero-bg">
+        <div class="parallax-layer layer-back" data-speed="0.2" style="background-image:url('https://evangelize2025.my.canva.site/_assets/media/da4fba8ab7bdc2dd6d703c445b415ab8.jpg')"></div>
+        <div class="parallax-layer layer-mid" data-speed="0.5" style="background:linear-gradient(180deg, rgba(2,6,10,0.3), rgba(123,211,137,0.06));"></div>
+        <div class="parallax-layer layer-foreground" data-speed="0.9">
+          <!-- simple SVG church silhouette for vibe -->
+          <svg class="church-silhouette" viewBox="0 0 800 200" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <g fill="rgba(0,0,0,0.25)">
+              <rect x="0" y="80" width="800" height="120" fill="transparent"></rect>
+              <path d="M80 120 L110 80 L140 120 L140 170 L80 170 Z M200 90 L240 50 L280 90 L280 170 L200 170 Z M360 110 L380 90 L400 110 L400 170 L360 170 Z M520 70 L560 30 L600 70 L600 170 L520 170 Z" fill="rgba(0,0,0,0.25)"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="hero-inner glass">
+        <div class="word-art">
+          <h1 class="wa-line wa-top">EVANGELIZE</h1>
+          <h2 class="wa-year">2025</h2>
+        </div>
+        <p class="hero-sub">WHERE FAITH MEETS MELODY — A youth-led outreach across Bangladesh</p>
+        <div id="countdown" class="countdown" aria-live="polite">
+          <div><span id="days">0</span><small>Days</small></div>
+          <div><span id="hours">00</span><small>Hours</small></div>
+          <div><span id="minutes">00</span><small>Minutes</small></div>
+          <div><span id="seconds">00</span><small>Seconds</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="event-details container">
+      <h2 class="section-title">Event Details</h2>
+      <div class="event-grid">
+        <div>
+          <h3 class="section-sub">Location</h3>
+          <p>Bangladesh Baptist Church<br>70/D-1, Indira Road, Tejgaon, Dhaka-1215</p>
+        </div>
+        <div>
+          <h3 class="section-sub">Dates</h3>
+          <p>November 21, 2025 — Friday</p>
+        </div>
+        <div>
+          <h3 class="section-sub">Time</h3>
+          <p>Gates open at 4:00 pm<br>Performances from 5:00 pm to 10:00 pm</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tickets container">
+      <h2 class="section-title">Tickets & Registration</h2>
+      <p>How to Register: Click the registration button on the Evangelize page and complete the registration. Send payment via bKash or Nagad to the numbers provided. Upload your payment screenshot or provide the transaction number. Receive your e-ticket via WhatsApp or email within 24–48 hours.</p>
+
+      <div class="ticket-cards">
+        <div class="ticket reveal pulse">
+          <h3>Standard Pass</h3>
+          <p class="price">৳200</p>
+          <ul>
+            <li>Access to the full concert program 🎶</li>
+            <li>Fellowship dinner 🍽️</li>
+            <li>Official Evangelize wristband 🎉</li>
+          </ul>
+        </div>
+        <div class="ticket reveal">
+          <h3>Premium Pass</h3>
+          <p class="price">৳400</p>
+          <ul>
+            <li>Everything in Standard Pass</li>
+            <li>Exclusive Evangelize 2025 T-Shirt 👕</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="content" id="about">
+    <h2 class="section-title about-title"><span class="title-decor">✝</span><span class="title-text">About Us</span></h2>
+      <p>Bangladesh Baptist Church Youth Committee (BBC Youth) organizes outreach and spiritual activities for young people across Bangladesh.</p>
+
+      <div class="cards">
+        <article class="reveal">
+          <h3 class="section-sub">Our Vision</h3>
+          <p class="muted-panel">To see transformed communities through the gospel and youth leadership.</p>
+        </article>
+        <article class="reveal pulse">
+          <h3 class="section-sub">Our Mission</h3>
+          <p class="muted-panel">Mobilize, train and inspire youth to share faith, serve communities and grow spiritually.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid container">
+      <div>
+        <h4>Contact</h4>
+        <p>70/D-1, Indira Road, Tejgaon, Dhaka-1215</p>
+        <p>Phone: +8801687671147<br>+8801621070756</p>
+        <p>Email: info@bbc-youth.example</p>
+      </div>
+      <div>
+        <h4>Organizers</h4>
+        <p>Bangladesh Baptist Church Youth Committee</p>
+        <p>Stanley Tonmoy Karmakar<br>Evan Yuvraj Munshi</p>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <p>Supported by Bangladesh Baptist Church</p>
+      </div>
+    </div>
+    <div class="legal container">
+      <small>&copy; Bangladesh Baptist Church Youth Committee — Terms & Support • Privacy Policy • Designed with Canva</small>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

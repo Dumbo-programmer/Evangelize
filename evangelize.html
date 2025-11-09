@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Evangelize 2025 - Details</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dark">
+  <!-- Loading overlay: shows a cross/church motif while the page loads -->
+  <div id="pageLoader" class="page-loader" role="status" aria-live="polite" aria-label="Loading">
+    <div class="loader-inner">
+      <svg width="110" height="110" viewBox="0 0 110 110" aria-hidden="true" class="crucifix-svg">
+        <defs>
+          <linearGradient id="g1" x1="0%" x2="100%">
+            <stop offset="0%" stop-color="#8ef2b8"/>
+            <stop offset="50%" stop-color="#6ec8ff"/>
+            <stop offset="100%" stop-color="#ffd36e"/>
+          </linearGradient>
+        </defs>
+        <!-- halo -->
+        <g>
+          <circle class="halo" cx="55" cy="28" r="18" fill="none" stroke="url(#g1)" stroke-width="2" opacity="0.95" />
+        </g>
+        <!-- crucifix -->
+        <g fill="none" stroke="url(#g1)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path class="cross-vert" d="M55 18 L55 76" />
+          <path class="cross-horiz" d="M36 40 L74 40" />
+        </g>
+        <!-- abstract figure on the cross -->
+        <g fill="none" stroke="url(#g1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle class="figure-head" cx="55" cy="30" r="4" fill="url(#g1)" />
+          <path class="figure-body" d="M55 34 L55 50" />
+          <path class="figure-arms" d="M50 42 L60 42" />
+        </g>
+      </svg>
+      <div class="loader-text">Evangelize 2025</div>
+    </div>
+  </div>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="brand">
+        <a href="index.html"><img src="assets/logo.svg" alt="BBC Youth logo" class="logo"></a>
+      </div>
+      <div class="nav-right">
+        <button id="themeToggleEv" class="theme-toggle" aria-pressed="true" title="Toggle theme">🌙</button>
+      </div>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="evangelize.html" class="active">Evangelize</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+
+      <!-- Hidden audio player container. The YouTube IFrame API will create a player here with no visible UI. -->
+      <div id="ytAudioPlayer" style="width:0;height:0;overflow:hidden;visibility:hidden"></div>
+
+      <noscript>
+        <p>Please enable JavaScript to allow background audio playback.</p>
+      </noscript>
+    </section>
+
+    <section class="registration">
+      <h2 class="section-title">Tickets & Registration</h2>
+      <p>How to Register: Click the "Register" button below and follow the steps. Send payment via <strong>bKash</strong> or <strong>Nagad</strong> to the numbers provided. Upload your payment screenshot or provide the transaction number. Receive your e-ticket via WhatsApp or email within 24–48 hours.</p>
+
+      <div class="register-actions">
+        <a class="cta" href="#register">Register / Buy Ticket</a>
+      </div>
+
+      <div class="ticket-cards">
+        <div class="ticket reveal pulse">
+          <h3>Standard Pass</h3>
+          <p class="price">৳200</p>
+          <ul>
+            <li>Access to the full concert program</li>
+            <li>Fellowship dinner</li>
+            <li>Official Evangelize wristband</li>
+          </ul>
+        </div>
+        <div class="ticket reveal">
+          <h3>Premium Pass</h3>
+          <p class="price">৳400</p>
+          <ul>
+            <li>Everything in Standard Pass</li>
+            <li>Exclusive Evangelize 2025 T-Shirt</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="register" class="register-form reveal">
+        <h3>Registration details</h3>
+        <p>Send payment to one of these numbers and include the transaction ID in the registration form.</p>
+        <ul>
+          <li><strong>bKash / Nagad:</strong> +8801687671147</li>
+          <li><strong>Alternate:</strong> +8801621070756</li>
+        </ul>
+        <p>After payment, send a copy of the payment screenshot or transaction number. We will send your e-ticket via WhatsApp or email within 24–48 hours.</p>
+      </div>
+    </section>
+
+    <section class="about-org">
+      <h2 class="section-title">About BBCYC</h2>
+      <p>Bangladesh Baptist Church Youth Committee (BBCYC) was founded in the year 1974 and from its foundation it has been performing activities as an important wing of Bangladesh Baptist Church. From the period of its foundation it has been operating and organizing various types of religious, social, cultural and sports activities ensuring the involvement of youths.</p>
+
+      <h3>Our Vision</h3>
+      <p>The main vision of BBCYC is ensuring involvement of youth in various religious, social, cultural and sports activities in order to bring personal as well as social development. Aiming this vision BBCYC is organizing various events year-wide. As the youths are responsible for overall planning and execution of the events, these activities give birth to leadership skill among youths and that will lead the society to the constructive development.</p>
+
+      <h3>Our Mission</h3>
+      <p>Our mission is to create a platform for the young minds of our Christian society to learn ways to build relationship with God and church, develop spiritual growth, practice leadership and extra-curricular skills so that they would be able to flourish successfully within the church and society. Moreover, BBCYC aims to increase mutual understanding & brotherhood through the events and activities.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid container">
+      <div>
+        <h4>Contact</h4>
+        <p>70/D-1, Indira Road, Tejgaon, Dhaka-1215</p>
+        <p>Phone: +8801687671147<br>+8801621070756</p>
+        <p>Email: info@bbc-youth.example</p>
+      </div>
+      <div>
+        <h4>Organizers</h4>
+        <p>Bangladesh Baptist Church Youth Committee</p>
+        <p>Stanley Tonmoy Karmakar<br>Evan Yuvraj Munshi</p>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <p>Supported by Bangladesh Baptist Church</p>
+      </div>
+    </div>
+    <div class="legal container">
+      <small>&copy; Bangladesh Baptist Church Youth Committee — Terms & Support • Privacy Policy • Designed with Canva</small>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

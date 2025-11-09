@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Evangelize 2025 - Gallery</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dark">
+  <!-- Loading overlay: shows a cross/church motif while the page loads -->
+  <div id="pageLoader" class="page-loader" role="status" aria-live="polite" aria-label="Loading">
+    <div class="loader-inner">
+      <svg width="110" height="110" viewBox="0 0 110 110" aria-hidden="true" class="crucifix-svg">
+        <defs>
+          <linearGradient id="g1" x1="0%" x2="100%">
+            <stop offset="0%" stop-color="#8ef2b8"/>
+            <stop offset="50%" stop-color="#6ec8ff"/>
+            <stop offset="100%" stop-color="#ffd36e"/>
+          </linearGradient>
+        </defs>
+        <!-- halo -->
+        <g>
+          <circle class="halo" cx="55" cy="28" r="18" fill="none" stroke="url(#g1)" stroke-width="2" opacity="0.95" />
+        </g>
+        <!-- crucifix -->
+        <g fill="none" stroke="url(#g1)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path class="cross-vert" d="M55 18 L55 76" />
+          <path class="cross-horiz" d="M36 40 L74 40" />
+        </g>
+        <!-- abstract figure on the cross -->
+        <g fill="none" stroke="url(#g1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle class="figure-head" cx="55" cy="30" r="4" fill="url(#g1)" />
+          <path class="figure-body" d="M55 34 L55 50" />
+          <path class="figure-arms" d="M50 42 L60 42" />
+        </g>
+      </svg>
+      <div class="loader-text">Evangelize 2025</div>
+    </div>
+  </div>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="brand">
+        <a href="index.html"><img src="assets/logo.svg" alt="BBC Youth logo" class="logo"></a>
+      </div>
+      <div class="nav-right">
+        <button id="themeToggleGl" class="theme-toggle" aria-pressed="true" title="Toggle theme">🌙</button>
+      </div>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="evangelize.html">Evangelize</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container gallery-page">
+  <h1 class="section-title">Gallery</h1>
+  <p class="section-sub">Click any image to view larger. Poster gallery and event photos below.</p>
+    <div class="grid">
+      <a href="https://evangelize2025.my.canva.site/_assets/media/87db12cff6bcf731ad96228afcfed00a.jpg" class="grid-item reveal"><img src="https://evangelize2025.my.canva.site/_assets/media/87db12cff6bcf731ad96228afcfed00a.jpg" alt="Poster 1"></a>
+      <a href="https://evangelize2025.my.canva.site/_assets/media/a343432b190b1246e8510075ce5023dc.jpg" class="grid-item reveal"><img src="https://evangelize2025.my.canva.site/_assets/media/a343432b190b1246e8510075ce5023dc.jpg" alt="Poster 2"></a>
+      <a href="https://evangelize2025.my.canva.site/_assets/media/7db428a7f6cf3aa5546083f0e29c3328.jpg" class="grid-item reveal"><img src="https://evangelize2025.my.canva.site/_assets/media/7db428a7f6cf3aa5546083f0e29c3328.jpg" alt="Poster 3"></a>
+             <a href="./assets/5.png" class="grid-item reveal"><img src="./assets/5.png" alt="Poster 5"></a>
+
+        </div>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button id="lbClose" class="lb-close" aria-label="Close">×</button>
+      <img id="lbImg" src="" alt="Expanded image">
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid container">
+      <div>
+        <h4>Contact</h4>
+        <p>70/D-1, Indira Road, Tejgaon, Dhaka-1215</p>
+        <p>Phone: +8801687671147<br>+8801621070756</p>
+        <p>Email: info@bbc-youth.example</p>
+      </div>
+      <div>
+        <h4>Organizers</h4>
+        <p>Bangladesh Baptist Church Youth Committee</p>
+        <p>Stanley Tonmoy Karmakar<br>Evan Yuvraj Munshi</p>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <p>Supported by Bangladesh Baptist Church</p>
+      </div>
+    </div>
+    <div class="legal container">
+      <small>&copy; Bangladesh Baptist Church Youth Committee — Terms & Support • Privacy Policy • Designed with Canva</small>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
