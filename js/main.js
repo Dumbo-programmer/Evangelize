@@ -63,7 +63,8 @@ function setMusicIframe(videoId, autoplay = false) {
   iframe.style.height = '0';
   iframe.style.border = '0';
   iframe.style.visibility = 'hidden';
-  iframe.src = `https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1&autoplay=${autoplay?1:0}&controls=0&playsinline=1`;
+  // start playback at 10 seconds into each video to skip intros
+  iframe.src = `https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1&autoplay=${autoplay?1:0}&controls=0&playsinline=1&start=10`;
   document.body.appendChild(iframe);
 }
 
@@ -106,7 +107,8 @@ function initYTPlayer() {
   if (!el) return;
 
   // Create player on the hidden container. Player will be visually hidden.
-  try {
+    try {
+    // create YT player that starts playback at 10s
     window.ytPlayer = new YT.Player('ytAudioPlayer', {
       height: '0',
       width: '0',
@@ -118,7 +120,8 @@ function initYTPlayer() {
         modestbranding: 1,
         playsinline: 1,
         iv_load_policy: 3,
-        disablekb: 1
+        disablekb: 1,
+        start: 10
       },
       events: {
         onReady: function(event) {
@@ -128,7 +131,8 @@ function initYTPlayer() {
           if (event.data === YT.PlayerState.ENDED) {
             const next = pickRandom(MUSIC_VIDEOS);
             try {
-              window.ytPlayer.loadVideoById({videoId: next});
+              // ensure next track also starts at 10s
+              window.ytPlayer.loadVideoById({videoId: next, startSeconds: 10});
               window.ytPlayer.playVideo();
             } catch (e) {
               setMusicIframe(next, true);
@@ -138,7 +142,7 @@ function initYTPlayer() {
       }
     });
   } catch (e) {
-    // fallback: hidden iframe autoplay
+    // fallback: hidden iframe autoplay starting at 10s
     setMusicIframe(pickRandom(MUSIC_VIDEOS), true);
   }
 }
