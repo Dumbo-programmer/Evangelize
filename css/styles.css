@@ -277,7 +277,7 @@ body.light .social-link img{filter:none}
 .cards{display:flex;gap:18px;margin-top:16px;flex-wrap:wrap}
 .cards article{flex:1;background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 30px rgba(2,6,10,.6);border:1px solid rgba(255,255,255,0.02)}
 
-.site-footer{background:transparent;padding:18px;text-align:center;margin-top:36px;border-top:1px solid rgba(255,255,255,0.02);color:var(--muted)}
+.site-footer{background:transparent;padding-top: 200px; padding:18px;text-align:center;margin-top:36px;border-top:1px solid rgba(255,255,255,0.02);color:var(--muted)}
 
 .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;padding:18px 0}
 .footer-grid h4{margin:0 0 8px}
